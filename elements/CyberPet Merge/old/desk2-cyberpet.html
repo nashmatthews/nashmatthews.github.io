@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cyberpet23-12-good.css">
+    <title>textContent & innerHTML</title>
+  </head>
+  <body>
+    <audio id = "music1" loop>
+      <source src="openingtheme.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id = "music2" loop>
+      <source src="gametheme.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id = "gameover">
+      <source src="gameovertheme.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- <div id="navbar">
+
+      <a href="index.html">Home Page</a>
+    
+      <a href="contact.html">Contact Page</a>
+    
+      <a href="about.html">About Page</a>
+    
+      <a href="https://google.com/" target="_blank">Google</a>
+    
+    </div> -->
+    <!-- above created a navbar to look like a real website -->
+    
+    <div>
+      <h1 class = "gameTitle"> Farmyard Friends</h1> 
+      <!-- Here is our title for the cyberpetgame -->
+    </div>
+    
+    <div>
+      <p1 class="intro">Welcome to Farmyard Friends!<br><br>
+                          A fun frolic fru the frantic life of a farmer!<br>
+                          Feed your furry friends! Fill their frivolous lives with fun!</br>
+                          ...Or don't, but they'll die!
+                          <br>Thanks for playing!</p1>
+      <!-- Here is our welcome parragragh/text for the cyberpetgame -->
+    </div>
+    
+    <div class="imgs">
+    
+      <img class="img1" id="horsePic" alt="Horse" onclick="selectAnimal('horse')" src="horse.jpg" />
+    
+      <img class="img2" id="sheepPic" alt="Sheep" onclick="selectAnimal('sheep')" src="sheep.jpg" />
+    
+    </div>
+    <!-- above created a navbar to look like a real website -->
+    
+    <div class="game">
+      <h1 id="placeholder">What is your pet's name?</h1>
+      <input id="input" type="text">
+      <button id="name">Submit</button>
+
+      <button id="start">Start Game</button>
+      
+      <h2 id="stats"></h2>
+      
+      <button id="sheep">Sheep</button>
+      <button id="horse">Horse</button>
+      <div class="actions">  
+        <button id="feed">Feed</button>
+        <button id="play">Play</button>
+        <button id="sleep">Sleep</button>
+        <button id="shear">Shear</button>
+        <button id="change">Change Shoes</button>
+      </div>
+    </div>
+    <script src="desk2-cyberpet.js"></script>
+  </body>
+</html>

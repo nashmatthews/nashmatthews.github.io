@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="desk2-cyberpet.css">
+    <title>textContent & innerHTML</title>
+  </head>
+  <body>
+    <audio id = "music1" loop>
+      <source src="assets/openingtheme.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id = "music2" loop>
+      <source src="assets/gametheme.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id = "gameover">
+      <source src="assets/gameovertheme.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div>
+      <h1 class = "gameTitle"> Farmyard Friends</h1> 
+    </div>
+    
+    <div>
+      <p1 class="intro">Welcome to Farmyard Friends!<br><br>
+                          A fun frolic fru the frantic life of a farmer!<br>
+                          Feed your furry friends! Fill their frivolous lives with fun!</br>
+                          ...Or don't, but they'll die!</p1>
+    </div>
+    
+    <div class="imgs">
+      <img class="img1" id="horsePic" alt="Horse" onclick="selectAnimal('horse')" src="assets/horse.jpg" />
+      <img class="img2" id="sheepPic" alt="Sheep" onclick="selectAnimal('sheep')" src="assets/sheep.jpg" />
+    </div>
+    
+    <div class="game">
+      <h1 id="placeholder">What is your pet's name?</h1>
+      <input id="input" type="text">
+      <button id="name">Submit</button>
+
+      <button id="start">Start Game</button>
+      
+      <h2 id="stats"></h2>
+      
+      <button id="sheep">Sheep</button>
+      <button id="horse">Horse</button>
+      <div class="actions">  
+        <button id="feed">Feed</button>
+        <button id="play">Play</button>
+        <button id="sleep">Sleep</button>
+        <button id="shear">Shear</button>
+        <button id="change">Change Shoes</button>
+      </div>
+    </div>
+    <script src="desk2-cyberpet.js"></script>
+  </body>
+</html>
